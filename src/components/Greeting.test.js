@@ -2,6 +2,7 @@ import { render,screen } from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
 import Greeting from "./Greeting"
 
+
 describe('Greeting component', () => {
     test(' renders "Hello world" as a text' , () =>{
 
@@ -50,4 +51,5 @@ describe('Greeting component', () => {
          const outputElement = screen.queryByText('good to see you',{exact: false})
          expect(outputElement).toBeNull()
     })
+
 })
